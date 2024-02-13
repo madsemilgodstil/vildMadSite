@@ -18,6 +18,15 @@ html {
   --åbentLand: #ffe4b9;
 }
 
+.line {
+  width: 40%;
+  height: auto;
+  position: absolute;
+  z-index: 100;
+  top: 0%;
+  left: 35%;
+}
+
 #logo_svg {
   width: 20%;
   position: relative;
@@ -25,7 +34,9 @@ html {
 }
 
 nav {
+  position: relative;
   background-color: var(--menu_grå);
+  z-index: 101;
 }
 
 .spacer {
@@ -64,6 +75,10 @@ nav {
   height: auto;
 }
 
+.text_section_1 {
+  text-align: center;
+}
+
 /* ________________section______________________ */
 .background-section_2 {
   position: relative;
@@ -89,6 +104,10 @@ nav {
   width: 100%;
   height: auto;
   pointer-events: none;
+}
+
+.text_section_2 {
+  text-align: center;
 }
 
 /* ________________section______________________ */
@@ -118,6 +137,10 @@ nav {
   pointer-events: none;
 }
 
+.text_section_3 {
+  text-align: center;
+}
+
 /* ________________section______________________ */
 .background-section_4 {
   position: relative;
@@ -143,4 +166,8 @@ nav {
   width: 100%;
   height: auto;
   pointer-events: none;
+}
+
+.text_section_4 {
+  text-align: center;
 }
