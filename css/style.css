@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  width: 100vw;
+}
+
+html {
+  --grøn_lys: #aecc9f;
+  --grøn_mørk: #11a850;
+  --font_sort: #000000;
+  --font_hvid: #ffffff;
+  --menu_grå: #333333;
+  --footer: #73757b;
+  --by: #eae0e5;
+  --vand: #d8dbed;
+  --skov: #9af5c0;
+  --åbentLand: #ffe4b9;
+}
+
+#logo_svg {
+  width: 20%;
+  position: relative;
+}
+
+.section_1 {
+  background-image: url(/grafik/baggrund_skov.svg);
+  aspect-ratio: 1920/1080;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+}
+
+.overlay {
+  aspect-ratio: 1960/1100;
+  position: fixed;
+}
