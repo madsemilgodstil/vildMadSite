@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  width: 100vw;
   margin: 0;
   max-width: 100%;
   min-width: 20%;
@@ -111,6 +110,33 @@ nav {
 }
 
 .svg-container_3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
+/* ________________section______________________ */
+.background-section_4 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.overlay_4 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 99;
+}
+
+.svg-container_4 {
   position: absolute;
   top: 0;
   left: 0;
