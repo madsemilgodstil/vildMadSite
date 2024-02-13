@@ -48,7 +48,7 @@ nav {
   cursor: pointer;
 }
 
-.overlay {
+.overlay_1 {
   position: relative;
   top: 0;
   left: 0;
@@ -57,7 +57,7 @@ nav {
   z-index: 99;
 }
 
-.svg-container {
+.svg-container_1 {
   position: absolute;
   top: 0;
   left: 0;
@@ -71,6 +71,7 @@ nav {
   width: 100%;
   height: auto;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .overlay_2 {
@@ -83,6 +84,33 @@ nav {
 }
 
 .svg-container_2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
+/* ________________section______________________ */
+.background-section_3 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.overlay_3 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 99;
+}
+
+.svg-container_3 {
   position: absolute;
   top: 0;
   left: 0;
