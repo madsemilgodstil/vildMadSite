@@ -6,23 +6,55 @@
 
 html {
   --beige: #fcf2e8;
-  --grøn_mørk: #00ab41;
+  --grøn: #00ab41;
   --font_sort: #000000;
   --font_hvid: #ffffff;
-  --menu_grå: #333333;
-  --footer: #73757b;
-  --by: #eae0e5;
-  --vand: #d8dbed;
-  --skov: #9af5c0;
-  --åbentLand: #ffe4b9;
+  --brun: #333333;
 }
-
-/* ___________________________ font ___________________________ */
 
 body {
   background-color: var(--beige);
 }
 
+/* ___________________________ font ___________________________ */
 h1 {
-  margin-top: 30px;
+  font-family: "ital", sans-serif;
 }
+
+p {
+  font-family: "Lato", sans-serif;
+}
+
+/* Breadcrumb start */
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 1rem;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: var(--brun);
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: var(--brun);
+  text-decoration: none;
+  font-size: 0.6rem;
+  font-family: "Lato", sans-serif;
+}
+
+ul.breadcrumb li a:hover {
+  color: red;
+  text-decoration: none;
+}
+/* Breadcrumb slut */
