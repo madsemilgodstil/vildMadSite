@@ -1,31 +1,53 @@
+/*************** Reset *********************/
 * {
-  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   max-width: 100%;
 }
 
 html {
   --beige: #fcf2e8;
   --grøn: #00ab41;
+  --brun: #333333;
+  --rødbrun: #302718;
   --font_sort: #000000;
   --font_hvid: #ffffff;
-  --brun: #333333;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 body {
   background-color: var(--beige);
+  list-style: none;
 }
 
-/* ___________________________ font ___________________________ */
+main {
+  /* max-width: 1400px; */
+  margin: 0 auto;
+}
+
+/* ___________________________ fonte ___________________________ */
 h1 {
   font-family: "ital", sans-serif;
+}
+
+h2 {
+  font-family: "Lato", sans-serif;
 }
 
 p {
   font-family: "Lato", sans-serif;
 }
+a {
+  font-family: "Lato", sans-serif;
+}
 
-/* Breadcrumb start */
+/* ___________________________ Breadcrumb ___________________________ */
 /* Style the list */
 ul.breadcrumb {
   padding: 10px 16px;
@@ -58,3 +80,78 @@ ul.breadcrumb li a:hover {
   text-decoration: none;
 }
 /* Breadcrumb slut */
+
+/* ___________________________ Ester INDEX ___________________________ */
+.forside {
+  background-image: url("/Grafik/baggrund_skov.svg");
+  margin-bottom: 20px;
+}
+.forside h1 {
+  text-align: center;
+  color: var(--beige);
+  border: solid 4px var(--beige);
+  padding: 20px;
+  margin-inline: 170px;
+  text-transform: uppercase;
+}
+.overskrift {
+  padding: 100px;
+  padding-inline: initial;
+  align-items: center;
+  text-align: center;
+  margin-inline: auto;
+}
+
+/* kategorier */
+.kategorier {
+  display: block;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  gap: 20px;
+}
+
+.openland {
+  background-image: url("/Grafik/vandnært.svg");
+  color: var(--beige);
+  padding: 100px;
+}
+.forrest {
+  background-image: url("/Grafik/skov.svg");
+  color: var(--beige);
+  padding: 100px;
+}
+
+.link-button {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 3px 15px;
+  color: var(--brun);
+  border: 2px solid var(--brun);
+
+  text-decoration: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.link-button:hover {
+  border: 2px solid var(--beige);
+  background-color: var(--grøn);
+  color: var(--beige);
+}
+
+footer {
+  margin-top: 100px;
+}
+/* minumum 800px */
+@media (min-width: 800px) {
+  /* kategorier */
+  .kategorier {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    gap: 20px;
+  }
+}
